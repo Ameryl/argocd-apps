@@ -1,5 +1,6 @@
 ---
-ingress:
-  enabled: true
-  ingressClassName: "tailscale"
-htdocsConfigMap: "html-configmap"
+apache:
+  ingress:
+    enabled: true
+    ingressClassName: "tailscale"
+  htdocsConfigMap: "html-configmap"
