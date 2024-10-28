@@ -9,4 +9,4 @@ appVersion: "2.4.62"
 dependencies:
 - name: apache
   version: 11.2.21
-  repository: registry-1.docker.io/bitnamicharts/apache
+  repository: registry-1.docker.io/bitnamicharts
