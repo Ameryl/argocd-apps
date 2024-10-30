@@ -1,5 +1,5 @@
 apiVersion: v2
-name: apache
+name: apacheweb
 description: A Helm chart for Kubernetes
 type: application
 
@@ -8,5 +8,5 @@ appVersion: "2.4.62"
 
 dependencies:
 - name: apache
-  version: 11.2.21
-  repository: registry-1.docker.io/bitnamicharts
+  version: 11.2.22
+  repository: oci://registry-1.docker.io/bitnamicharts
