@@ -3,4 +3,6 @@ apache:
   ingress:
     enabled: true
     ingressClassName: "tailscale"
+  service:
+    type: ClusterIP
   htdocsConfigMap: "html-configmap"
