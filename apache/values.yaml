@@ -9,8 +9,8 @@ apache:
         paths:
           - backend:
               service: apacheweb
-              port:
-                name: http
+                port:
+                  name: http
             path: /
             pathType: Prefix
   service:
