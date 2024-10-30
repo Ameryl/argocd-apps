@@ -4,7 +4,6 @@ apache:
     enabled: true
     ingressClassName: "tailscale"
     pathType: prefix
-    hostname: 
   service:
     type: ClusterIP
     ports:
