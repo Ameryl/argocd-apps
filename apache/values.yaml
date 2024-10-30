@@ -10,7 +10,7 @@ apache:
           - backend:
               service: apacheweb
               port:
-                  name: http
+                name: http
             path: /
             pathType: Prefix
   service:
