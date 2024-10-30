@@ -2,10 +2,8 @@ apiVersion: v2
 name: apacheweb
 description: A Helm chart for Kubernetes
 type: application
-
 version: 0.1.0
 appVersion: "2.4.62"
-
 dependencies:
 - name: apache
   version: 11.2.22
