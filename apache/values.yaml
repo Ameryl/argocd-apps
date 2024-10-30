@@ -4,9 +4,19 @@ apache:
     enabled: true
     ingressClassName: "tailscale"
     pathType: Prefix
-    hostname: null
+    extraRules:
+    - http:
+        paths:
+          - backend:
+              service: apacheweb
+              port:
+                  name: http
+            path: /
+            pathType: Prefix
   service:
     type: ClusterIP
     ports:
       http: 80
   htdocsConfigMap: "html-configmap"
+
+  
