@@ -1,0 +1,8 @@
+image:
+  repository: tessa/uptime-kuma
+  tag: "1.23.16"
+replicas: 1
+service:
+  type: ClusterIP
+  port: 3001
+  nodePort:
