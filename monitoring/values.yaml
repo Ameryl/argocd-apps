@@ -3,3 +3,11 @@ kube-prometheus-stack:
     ingress:
       enabled: true
       ingressClassName: tailscale
+  prometheus:
+    prometheusSpec:
+      additionalScrapeConfigs:
+        - job_name: node_exporter_ci
+          static_configs:
+          - targets: 
+              - '10.24.59.6:9100'
+              - '10.24.59.6:9100'
