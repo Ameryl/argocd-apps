@@ -14,6 +14,7 @@ kube-prometheus-stack:
   alertmanager:
   config:
     route:
+      group_by: ['namespace']
       reciever: discord
     receivers:
       - name: discord
