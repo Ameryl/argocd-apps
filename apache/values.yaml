@@ -13,8 +13,7 @@ apache:
               service:
                 name: "apacheweb"
                 port:
-                  name: http
-            
+                  name: http       
   service:
     type: ClusterIP
     ports:
